@@ -46,7 +46,7 @@ func webHookHandler(rw http.ResponseWriter, req *http.Request) {
 		if err != nil {
 			log.Println(err)
 		}
-		var nextDay = time.Date(now.Year(), now.Month(), now.Day(), 8, 0, 0, 0, l)
+		var nextDay = time.Date(now.Year(), now.Month(), now.Day(), 15, 58, 0, 0, l)
 		sub := nextDay.Sub(now)
 		fmt.Println(nextDay)
 		//fmt.Println(sub)
